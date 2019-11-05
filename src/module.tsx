@@ -39,7 +39,6 @@ export class MyPanel extends PureComponent<PanelProps<MyPanelOptions>,State> {
 }
 export class MyPanelEditor extends PureComponent<PanelEditorProps<MyPanelOptions>> {
   onUpdatePanel = (e: React.ChangeEvent<HTMLInputElement>) => ( this.props.onOptionsChange({ ...this.props.options ,url: e.target.value}));
-  onChangeTimeRange = (e:React.ChangeEvent) => (alert("change"))
   render() {
     return (
         <PanelOptionsGroup title="Options">
